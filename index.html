@@ -18,7 +18,7 @@
 /* full width image */
  img.special {
   height: auto;
-  width: 200%;
+  width: 100%;
 }
  
 /* Control the left side */
@@ -31,12 +31,26 @@
   right: 0;
 }
 
-/* If you want the content centered horizontally and vertically */
+/* If you want the content centered horizontally and vertically or else*/
 .centered {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+}
+ .rightaligned{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -50%);
+  text-align: center;
+}
+ .leftaligned {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, -50%);
   text-align: center;
 }
  
@@ -46,7 +60,7 @@
 <body>
  <div class="split left">
   <div class="container">
-  <div class="centered">
+  <div class="rightaligned">
     <img class="special" src="https://raw.githubusercontent.com/tserandon/theserandons.github.io/master/images/weddingleft.png" >
     <h2>Taylor Serandon</h2>
     <p>Sales, Hospitality, Graphic Design</p>
@@ -56,7 +70,7 @@
 
 <div class="split right">
   <div class="container">
-  <div class="centered">
+  <div class="leftaligned">
     <img class="special"  src="https://raw.githubusercontent.com/tserandon/theserandons.github.io/master/images/weddingright.png">
     <h2>Thomas Serandon</h2>
     <p>Teacher, Physicist, Amateur Coder</p>
