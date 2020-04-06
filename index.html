@@ -15,7 +15,12 @@
   overflow-x: hidden;
   padding-top: 20px;
 }
-
+/* full width image */
+ img.special {
+  height: auto;
+  width: 100%;
+}
+ 
 /* Control the left side */
 .left {
   left: 0;
@@ -34,23 +39,28 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
+ 
 
 </style>
 </head>
 <body>
  <div class="split left">
+  <div class="container">
   <div class="centered">
-    <img src="https://raw.githubusercontent.com/tserandon/theserandons.github.io/master/images/weddingleft.png" >
+    <img class="special" src="https://raw.githubusercontent.com/tserandon/theserandons.github.io/master/images/weddingleft.png" >
     <h2>Taylor Serandon</h2>
     <p>Sales, Hospitality, Graphic Design</p>
+  </div>
   </div>
 </div>
 
 <div class="split right">
+  <div class="container">
   <div class="centered">
-    <img src="https://raw.githubusercontent.com/tserandon/theserandons.github.io/master/images/weddingleft.png">
+    <img class="special"  src="https://raw.githubusercontent.com/tserandon/theserandons.github.io/master/images/weddingright.png">
     <h2>Thomas Serandon</h2>
     <p>Teacher, Physicist, Amateur Coder</p>
+  </div>
   </div>
 </div> 
 
