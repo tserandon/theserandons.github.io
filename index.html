@@ -1,158 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Thomas Serandon - Sciences, Education & Photography</title>
+<title>Taylor & Thomas Serandon</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
-
-/* Style the header */
-.header {
-  padding: 5px;
-  text-align: center;
-  background: #034f84;
-  color: white;
-}
-
-/* Double column environment */
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 50%;
-}
-
-/* Increase the font size of the h1 element */
-.header h1 {
-  font-size: 40px;
-}
-
-/* Style the top navigation bar */
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Style the navigation bar links */
-.navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-}
-
-/* Right-aligned link */
-.navbar a.right {
-  float: right;
-}
-
-/* Change color on hover */
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-
-/* Main column */
-.main {   
-  background-color: white;
-  padding: 20px;
-}
-
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-}
-
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width:100%;
-  }
-}
-  
-/* Style the video: 100% width and height to cover the entire window */
-#myVideo {
+ /* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
   position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-
-/* Add some content at the bottom of the video/page */
-
-
-.tcontent {
-  position: fixed;
+  z-index: 1;
   top: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
-  
-.bcontent {
-  position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
+/* full width image */
+ img.special {
+  height: auto;
   width: 100%;
-  padding: 20px;
 }
+ 
+/* Control the left side */
+.left {
+  left: 0;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+}
+
+/* If you want the content centered horizontally and vertically or else*/
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+ .rightaligned{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -50%);
+  text-align: center;
+}
+ .leftaligned {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, -50%);
+  text-align: center;
+}
+ 
+
 </style>
 </head>
 <body>
-
- <!-- The video -->
-<video autoplay muted loop id="myVideo">
-  <source src="atom.mp4" type="video/mp4">
-</video>
-
-<!-- Optional: some overlay text to describe the video -->
-
-
-  
-<div class="tcontent">
-  <div class="header">
-  <h1>Sciences, Education & Photography</h1>
-  <p>Thomas Serandon</p>
-</div>
-  
-<div class="navbar">
-  <a href="https://www.atheoryaboutsomethings.com" style="width:20%">Blog</a>
-  <a href="HighSchool" style="width:20%">High School</a>
-  <a href="PhysicsClub" style="width:20%">Physics Club</a>
-  <a href="Computer" style="width:20%">Online Learning</a>
-  <a href="Photography" style="width:20%">Photography</a>
+ <div class="split left">
+  <div class="container">
+  <div class="rightaligned">
+    <img class="special" src="https://raw.githubusercontent.com/tserandon/theserandons.github.io/master/images/weddingleft.png" >
+    <h2>Taylor Serandon</h2>
+    <p>Sales, Hospitality, Graphic Design</p>
+  </div>
+  </div>
 </div>
 
-</div> 
-
-<div class="bcontent">
-  <p text-align="center">by Thomas Serandon (version 2020/01/17) - <a href="AboutMe">About me</a></p>
+<div class="split right">
+  <div class="container">
+  <div class="leftaligned">
+    <img class="special"  src="https://raw.githubusercontent.com/tserandon/theserandons.github.io/master/images/weddingright.png">
+    <h2>Thomas Serandon</h2>
+    <p>Teacher, Physicist, Amateur Coder</p>
+  </div>
+  </div>
 </div> 
 
 </body>
