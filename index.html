@@ -2,10 +2,17 @@
 <html lang="en">
 <head>
 <title>Taylor & Thomas Serandon</title>
-<meta charset="UTF-8">
+ 
+<!DOCTYPE html>
+<html>
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
- /* Split the screen in half */
+body {
+  font-family: Arial;
+  color: white;
+}
+
 .split {
   height: 100%;
   width: 50%;
@@ -15,23 +22,17 @@
   overflow-x: hidden;
   padding-top: 20px;
 }
-/* full width image */
- img.special {
-  height: auto;
-  width: 100%;
-}
- 
-/* Control the left side */
+
 .left {
   left: 0;
+  background-color: #111;
 }
 
-/* Control the right side */
 .right {
   right: 0;
+  background-color: red;
 }
 
-/* If you want the content centered horizontally and vertically or else*/
 .centered {
   position: absolute;
   top: 50%;
@@ -39,53 +40,30 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
- .rightaligned {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(0%, -50%);
-  text-align: center;
-}
- .leftaligned {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-100%, -50%);
-  text-align: center;
-}
- 
 
-a:link {
-  text-decoration: none;
+.centered img {
+  width: 150px;
+  border-radius: 50%;
 }
-
-a:hover {
-  background-color: color:rgb(0,0,0);
-}
- 
 </style>
 </head>
 <body>
- <div class="split left">
-  <div class="rightaligned">
-  <a href="https://theserandons.com/taylor" style="color:rgb(0,0,0);">
-   <img class="special" src="https://raw.githubusercontent.com/tserandon/theserandons.github.io/master/images/weddingleft.png" > 
-   <h2>Taylor Serandon</h2>
-    <p>Sales, Hospitality, Graphic Design</p>
-  </a>
+
+<div class="split left">
+  <div class="centered">
+    <img src="icontom.png">
+    <h2>Taylor Serandon</h2>
+    <p>Hospitality, Sales, Graphic Design</p>
   </div>
 </div>
 
 <div class="split right">
-  <div class="leftaligned">
-  <a href="https://theserandons.com/thomas" style="color:rgb(0,0,0);">
-    <img class="special"  src="https://raw.githubusercontent.com/tserandon/theserandons.github.io/master/images/weddingright.png">
+  <div class="centered">
+    <img src="icontom.png">
     <h2>Thomas Serandon</h2>
-    <p>Teacher, Physicist, Amateur Coder</p>
-  </a>
+    <p>Physics, Education, Amateur Coding</p>
   </div>
-</div> 
-
+</div>
+     
 </body>
-</html>
-
+</html> 
