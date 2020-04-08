@@ -1,55 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-        <title>Thomas Serandon</title>
-        
+<title>Taylor & Thomas Serandon</title>
 <style>
-html, body {
-            height: 90%;
-            margin: 0;
-            padding: 5% 5%;
-            width: 90%;
-        }
-img {
-    padding: 10%;
-    margin: 0 auto;
-    max-height: 19.4%;
-    max-width: 19.4%;
-    min-width : 324px;
-    min-height : 324px;
-    transition: transform .2s;
+body {
+  font-family: Arial;
+  color: white;
 }
-        
-img:hover {
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  -webkit-transform: translateY(-25%);
-  -ms-transform: translateY(-25%);
-  transform: translateY(-25%);
-  -ms-transform: scale(2); /* IE 9 */
-  -webkit-transform: scale(2); /* Safari 3-8 */
-  transform: scale(2); 
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
-        
-a:hover {
-  background-color: color:rgb(255,255,255);
-}        
-        
+
+.left {
+  left: 0;
+  background-color: #6db1fa;
+}
+
+.right {
+  right: 0;
+  background-color: #8a9aab;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 200px;
+  border-radius: 50%;
+}
+  
+a:link {
+  color: white;
+  background-color: transparent; 
+  text-decoration: none;
+}
+  
+a:visited {
+  color: white;
+  background-color: transparent; 
+  text-decoration: none;
+}
+  
 </style>
 </head>
-<body style="background-color:black;">
-<hr> 
-<hr> 
-<p style="color:white"> This is an example of what could be achieved !</p>
-<hr> 
-<hr>
-<a href="https://workwithsera.com/" style="color:rgb(0,0,0);">
-<img src="https://raw.githubusercontent.com/tserandon/theserandons.github.io/master/taylor/data/website.jpg" />
-</a>
-<a href="https://www.instagram.com/tay.serandon/" style="color:rgb(0,0,0);">
-<img src="https://raw.githubusercontent.com/tserandon/theserandons.github.io/master/taylor/data/instagram.png" />   
-</a>
-</div> 
+<body>
+
+<div class="split left">
+  <div class="centered">
+    <a href="http://theserandons.com/taylor/"> 
+    <img src="https://raw.githubusercontent.com/tserandon/theserandons.github.io/master/images/icontay.png">
+    <h2>Taylor Serandon</h2>
+    <p>Hospitality, Sales, Graphic Design</p>
+    </a>
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <a href="http://theserandons.com/thomas/"> 
+    <img src="https://raw.githubusercontent.com/tserandon/theserandons.github.io/master/images/icontom.png">
+    <h2>Thomas Serandon</h2>
+    <p>Physics, Education, Amateur Coding</p>
+    </a>
+  </div>
+</div>
+     
 </body>
-</html>
+</html> 
