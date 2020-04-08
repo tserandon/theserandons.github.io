@@ -1,39 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Taylor & Thomas Serandon</title>
+<title>Thomas Serandon</title>
 <style>
+* {
+  box-sizing: border-box;
+}
 body {
+  font-size: 1.25rem;
   font-family: Arial;
-  color: white;
+  line-height: 150%;
 }
 
-.split {
+section {
+  color: #fff;
+  text-align: center;
+}
+
+div {
   height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
 }
 
-.left {
-  left: 0;
-  background-color: #6db1fa;
-}
-
-.right {
-  right: 0;
-  background-color: #8a9aab;
-}
-
-.centered {
+article {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin: 0 0 0.75rem 0;
+}
+
+.container {
+  display: table;
+  width: 100%;
+}
+
+.left-half {
+  background-color: #8a9aab;
+  position: absolute;
+  left: 0px;
+  width: 25%;
+}
+
+.right-half {
+  background-color: #6db1fa;
+  position: absolute;
+  right: 0px;
+  width: 75%;
 }
 
 .centered img {
@@ -53,29 +71,40 @@ a:visited {
   text-decoration: none;
 }
   
+img {
+    padding: 25px;
+    margin: 0 auto;
+    max-height: 200px;
+    max-width: 200px;
+    min-width : 150px;
+    min-height : 150px;
+}
+  
 </style>
 </head>
 <body>
 
-<div class="split left">
-  <div class="centered">
-    <a href="http://theserandons.com/taylor/"> 
-    <img src="https://raw.githubusercontent.com/tserandon/theserandons.github.io/master/images/icontay.png">
-    <h2>Taylor Serandon</h2>
-    <p>Hospitality, Sales, Graphic Design</p>
-    </a>
+<section class="container">
+  <div class="left-half">
+    <article>
+      <h1>Thomas Serandon</h1>
+      <p>Physics, Education, Amateur Coding </p>
+    </article>
   </div>
-</div>
-
-<div class="split right">
-  <div class="centered">
-    <a href="http://theserandons.com/thomas/"> 
-    <img src="https://raw.githubusercontent.com/tserandon/theserandons.github.io/master/images/icontom.png">
-    <h2>Thomas Serandon</h2>
-    <p>Physics, Education, Amateur Coding</p>
-    </a>
+  <div class="right-half">
+    <article>
+      <a href="https://tserandon.com">
+      <h1>Education</h1>
+      <img src="https://raw.githubusercontent.com/tserandon/theserandons.github.io/master/thomas/data/physics.png" />
+      </a>
+      <a href="https://theserandons.com/thomas/photography">
+      <h1>Photography</h1>
+      <img src="https://raw.githubusercontent.com/tserandon/theserandons.github.io/master/thomas/data/photography.png" />
+      </a>
+    </article>
   </div>
-</div>
+</section>
+  
      
 </body>
 </html> 
